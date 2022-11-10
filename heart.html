@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>HEART</title>
+
+<style>
+  body {
+    background-color: #fcfefc;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<body>
+
+  <div>
+  	 <img id="myHeart" src="dist/img/1.gif">
+  </div>
+
+</body>
+
+<script>
+  document.getElementById("myHeart").style.display = "none";
+  const myTimeout = setTimeout(showMyHeart, 500);
+
+  function showMyHeart() {
+    document.getElementById("myHeart").style.display = "block";
+  }
+</script>
+
+</html>
